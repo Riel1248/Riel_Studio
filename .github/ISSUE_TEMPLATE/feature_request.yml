@@ -1,0 +1,37 @@
+name: "✨ Feature Request"
+description: "Suggest something you'd like to see added or improved."
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What feature are you requesting?
+      description: Describe the feature clearly.
+      placeholder: "e.g. I'd like to be able to preview the generated image directly in the 3D viewport."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: Explain what's currently inconvenient or missing.
+      placeholder: "e.g. Right now I have to switch to ComfyUI to see the result, which breaks my workflow."
+    validations:
+      required: true
+
+  - type: textarea
+    id: how
+    attributes:
+      label: How would you like it to work?
+      description: Describe the expected behavior as specifically as you can.
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or references
+      description: If you have an example from ComfyUI, another tool, or a sketch, attach it here. You can drag and drop files.
+    validations:
+      required: false
